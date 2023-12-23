@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search App</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Flight Search App</h1>
+    </header>
+
+    <div class="hint-container">
+        <p>3 letter IATA code for the current Location and Destination Required like for Mumbai(BOM)
+            Delhi(DEL)</p>
+    </div>
+    <div class="container">
+        <label for="currentLocation">Current Location:</label>
+        <input type="text" id="currentLocation">
+
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination">
+
+        <label for="date">Departure Date:</label>
+        <input type="date" id="date">
+
+        <button onclick="searchFlights()">Search</button>
+
+        <div id="flightsList">
+            <!-- Flight results will be displayed here -->
+        </div>
+    </div>
+
+    <script src="./javascript/app.js"></script>
+</body>
+</html>
